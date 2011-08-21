@@ -1,0 +1,37 @@
+<%= form_for(@backlog_item) do |f| %>
+  <% if @backlog_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@backlog_item.errors.count, "error") %> prohibited this backlog_item from being saved:</h2>
+
+      <ul>
+      <% @backlog_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </div>
+  <div class="field">
+    <%= f.label :backlog %><br />
+    <%= f.text_field :backlog %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

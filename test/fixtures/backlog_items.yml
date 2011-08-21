@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  cost: 9.99
+  priority: 9.99
+  backlog: 
+
+two:
+  name: MyString
+  description: MyText
+  cost: 9.99
+  priority: 9.99
+  backlog: 

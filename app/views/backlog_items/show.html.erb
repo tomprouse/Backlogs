@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @backlog_item.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @backlog_item.description %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @backlog_item.cost %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @backlog_item.priority %>
+</p>
+
+<p>
+  <b>Backlog:</b>
+  <%= @backlog_item.backlog %>
+</p>
+
+
+<%= link_to 'Edit', edit_backlog_item_path(@backlog_item) %> |
+<%= link_to 'Back', backlog_items_path %>
